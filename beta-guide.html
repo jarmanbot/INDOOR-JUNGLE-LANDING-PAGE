@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beta Tester Guide - Indoor Jungle</title>
+    <meta name="description" content="Complete setup and feature guide for Indoor Jungle beta testers.">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; color: inherit;">
+                    <img src="images/logo.png" alt="Indoor Jungle">
+                    <span>Indoor Jungle</span>
+                </a>
+            </div>
+            <div class="badge" style="margin: 0;">Beta Tester Guide</div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="padding: 3rem 0;">
+        <div class="container">
+            <div class="hero-content">
+                <h1 style="font-size: 2.5rem;">Welcome, Beta Tester!</h1>
+                <p class="hero-subtitle">This guide will walk you through every feature of Indoor Jungle. Take your time exploring each section.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="section" style="padding-top: 2rem;">
+        <div class="container" style="max-width: 900px;">
+            <div class="guide-toc">
+                <h2>Quick Navigation</h2>
+                <div class="toc-grid">
+                    <a href="#installation" class="toc-item">📱 Installing the App</a>
+                    <a href="#first-plant" class="toc-item">🌱 Adding Your First Plant</a>
+                    <a href="#plant-id" class="toc-item">📷 Plant Identification</a>
+                    <a href="#calendar" class="toc-item">📅 Using the Calendar</a>
+                    <a href="#color-system" class="toc-item">🚦 Understanding Color Codes</a>
+                    <a href="#care-logging" class="toc-item">💧 Logging Care Activities</a>
+                    <a href="#recommendations" class="toc-item">🧠 Smart Recommendations</a>
+                    <a href="#analytics" class="toc-item">📊 Analytics & Insights</a>
+                    <a href="#environmental" class="toc-item">🌡️ Environmental Monitor</a>
+                    <a href="#settings" class="toc-item">⚙️ Settings & Preferences</a>
+                    <a href="#game" class="toc-item">🎮 Indoor Jungle Game</a>
+                    <a href="#troubleshooting" class="toc-item">🔧 Troubleshooting</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Guide -->
+    <section id="installation" class="section guide-section">
+        <div class="container" style="max-width: 900px;">
+            <div class="guide-header">
+                <span class="step-badge">Step 1</span>
+                <h2>Installing Indoor Jungle as a PWA</h2>
+            </div>
+            <div class="guide-content">
+                <p>Indoor Jungle works best when installed to your home screen. It will feel just like a native app!</p>
+                
+                <h3>📱 On iPhone/iPad (iOS)</h3>
+                <ol class="guide-steps">
+                    <li>Open Indoor Jungle in Safari browser</li>
+                    <li>Tap the Share button (square with arrow pointing up)</li>
+                    <li>Scroll down and tap "Add to Home Screen"</li>
+                    <li>Edit the name if you want, then tap "Add"</li>
+                    <li>Find the Indoor Jungle icon on your home screen!</li>
+                </ol>
+                
+                <img src="images/screenshot-ios-install.png" alt="iOS PWA installation steps" class="guide-screenshot">
+                
+                <h3>🤖 On Android</h3>
+                <ol class="guide-steps">
+                    <li>Open Indoor Jungle in Chrome browser</li>
+                    <li>Tap the three-dot menu in the top right</li>
+                    <li>Tap "Install App" or "Add to Home Screen"</li>
+                    <li>Tap "Install" when prompted</li>
+                    <li>The app will appear on your home screen!</li>
+                </ol>
+                
+                <img src="images/screenshot-android-install.png" alt="Android PWA installation steps" class="guide-screenshot">
+                
+                <div class="tip-box">
+                    <strong>💡 Pro Tip:</strong> Once installed, the app works offline and you'll receive care reminder notifications!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- First Plant -->
+    <section id="first-plant" class="section guide-section">
+        <div class="container" style="max-width: 900px;">
+            <div class="guide-header">
+                <span class="step-badge">Step 2</span>
+                <h2>Adding Your First Plant</h2>
+            </div>
+            <div class="guide-content">
+                <h3>Before You Start: Number Your Pots</h3>
+                <p>Use a label maker or permanent marker to number each plant pot. This makes tracking them super easy!</p>
+                
+                <h3>Adding a Plant</h3>
+                <ol class="guide-steps">
+                    <li>Tap the green <strong>+</strong> button in the top right corner</li>
+                    <li>Select "Add New Plant" from the menu</li>
+                    <li>Fill in the plant details:
+                        <ul>
+                            <li><strong>Plant Number:</strong> The number on your pot</li>
+                            <li><strong>Name:</strong> Give your plant a fun name</li>
+                            <li><strong>Species:</strong> Common name (e.g., "Pothos", "Snake Plant")</li>
+                            <li><strong>Location:</strong> Where it lives (e.g., "Living Room", "Bedroom")</li>
+                            <li><strong>Photo:</strong> Take or upload a picture</li>
+                            <li><strong>Care Schedule:</strong> How often to water and feed</li>
+                        </ul>
+                    </li>
+                    <li>Tap "Save" and your plant appears in the list!</li>
+                </ol>
+                
+                <img src="images/screenshot-add-plant.png" alt="Add plant form showing all fields" class="guide-screenshot">
+                
+                <div class="tip-box">
+                    <strong>💡 Not sure what species it is?</strong> Use Plant Identification first (see next section)!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plant Identification -->
+    <section id="plant-id" class="section guide-section">
+        <div class="container" style="max-width: 900px;">
+            <div class="guide-header">
+                <span class="step-badge">Feature</span>
+                <h2>📷 Plant Identification</h2>
+            </div>
+            <div class="guide-content">
+                <p>Don't know what plant you have? Let AI figure it out!</p>
+                
+                <h3>How to Use Plant ID</h3>
+                <ol class="guide-steps">
+                    <li>Tap the <strong>+</strong> button</li>
+                    <li>Select "Plant Identification"</li>
+                    <li>Choose one:
+                        <ul>
+                            <li><strong>Take Photo:</strong> Snap a picture right now</li>
+                            <li><strong>Upload Photo:</strong> Choose from your library</li>
+                        </ul>
+                    </li>
+                    <li>Wait a few seconds for AI analysis</li>
+                    <li>Get instant identification with:
+                        <ul>
+                            <li>Species name</li>
+                            <li>Care recommendations</li>
+                            <li>Watering and feeding schedule</li>
+                            <li>Light requirements</li>
+                        </ul>
+                    </li>
+                    <li>Save the plant directly to your collection!</li>
+                </ol>
+                
+                <img src="images/screenshot-plantid.png" alt="AI plant identification interface" class="guide-screenshot">
+                
+                <div class="tip-box">
+                    <strong>💡 Best Results:</strong> Take photos in good lighting with the whole plant visible, including leaves clearly shown.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar -->
+    <section id="calendar" class="section guide-section">
+        <div class="container" style="max-width: 900px;">
+            <div class="guide-header">
+                <span class="step-badge">Feature</span>
+                <h2>📅 Care Calendar</h2>
+            </div>
+            <div class="guide-content">
+                <p>See all your care tasks at a glance with our visual calendar.</p>
+                
+                <h3>Accessing the Calendar</h3>
+                <ul class="guide-steps">
+                    <li>Tap "calendar" in the bottom navigation bar, OR</li>
+                    <li>Tap the <strong>+</strong> button → "Care Calendar"</li>
+                </ul>
+                
+                <h3>Using the Calendar</h3>
+                <ol class="guide-steps">
+                    <li><strong>View the Month:</strong> See all dates with color-coded indicators</li>
+                    <li><strong>Tap a Date:</strong> See which plants need care that day</li>
+                    <li><strong>Review Tasks:</strong> Each plant card shows:
+                        <ul>
+                            <li>What care is needed (water, feed, or both)</li>
+                            <li>Plant photo and number</li>
+                            <li>Quick action buttons</li>
+                        </ul>
+                    </li>
+                    <li><strong>Take Action:</strong> Use the buttons to log care instantly</li>
+                </ol>
+                
+                <img src="images/screenshot-calendar.png" alt="Color-coded care calendar" class="guide-screenshot">
+                
+                <div class="tip-box">
+                    <strong>💡 Missed Care Warning:</strong> If you have overdue tasks, you'll see a red warning banner at the top with a link to the Missed Care page.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Color System -->
+    <section id="color-system" class="section guide-section">
+        <div class="container" style="max-width: 900px;">
+            <div class="guide-header">
+                <span class="step-badge">Important</span>
+                <h2>🚦 Understanding the Color System</h2>
+            </div>
+            <div class="guide-content">
+                <p>Indoor Jungle uses a traffic light system to show plant care urgency.</p>
+                
+                <div class="color-guide">
+                    <div class="color-item red">
+                        <div class="color-badge">🔴 RED</div>
+                        <h3>Overdue - Needs Immediate Attention</h3>
+                        <p>These plants are past their care date and need help right away. The calendar shows past dates in red, and overdue plants have red backgrounds on their cards.</p>
+                    </div>
+                    
+                    <div class="color-item orange">
+                        <div class="color-badge">🟠 ORANGE</div>
+                        <h3>Due Today - Care Needed Now</h3>
+                        <p>These plants need care today. Orange cards mean it's time to water, feed, or check them.</p>
+                    </div>
+                    
+                    <div class="color-item green">
+                        <div class="color-badge">🟢 GREEN</div>
+                        <h3>Upcoming - All Good</h3>
+                        <p>These plants are scheduled for care in the near future. Green means they're healthy and on schedule.</p>
+                    </div>
+                </div>
+                
+                <h3>Plant Number Indicators</h3>
+                <p>The plant number badges also use the traffic light system:</p>
+                <ul class="guide-steps">
+                    <li><strong>Red badge:</strong> Plant is overdue for care</li>
+                    <li><strong>Orange badge:</strong> Plant needs care today</li>
+                    <li><strong>Green badge:</strong> Plant is on schedule</li>
+                </ul>
+                
+                <img src="images/screenshot-care.png" alt="Color-coded plant cards showing traffic light system" class="guide-screenshot">
+            </div>
+        </div>
+    </section>
+
+    <!-- Care Logging -->
+    <section id="care-logging" class="section guide-section">
+        <div class="container" style="max-width: 900px;">
+            <div class="guide-header">
+                <span class="step-badge">Feature</span>
+                <h2>💧 Logging Care Activities</h2>
+            </div>
+            <div class="guide-content">
+                <h3>Quick Actions (Fastest Way)</h3>
+                <p>On any plant card, you'll see quick action buttons:</p>
+                <ul class="guide-steps">
+                    <li><strong>Water Button:</strong> Logs a "light" watering instantly</li>
+                    <li><strong>Feed Button:</strong> Logs "general/moderate" feeding instantly</li>
+                    <li><strong>Moisture Check Button:</strong> Logs that you checked the soil and adds 3 days to the next check (doesn't log watering)</li>
+                </ul>
+                
+                <h3>Detailed Logging</h3>
+                <p>For more control over your care logs:</p>
+                <ol class="guide-steps">
+                    <li>Tap on a plant card to open its detail page</li>
+                    <li>Choose the care type:
+                        <ul>
+                            <li><strong>Watering:</strong> Specify amount and add notes</li>
+                            <li><strong>Feeding:</strong> Choose fertilizer type and amount</li>
+                            <li><strong>Repotting:</strong> Log pot changes and new soil</li>
+                            <li><strong>Soil Top-Up:</strong> Add fresh soil without repotting</li>
+                            <li><strong>Pruning:</strong> Record trimming and maintenance</li>
+                        </ul>
+                    </li>
+                    <li>Add notes about the plant's condition</li>
+                    <li>Save - the next care date updates automatically!</li>
+                </ol>
+                
+                <img src="images/screenshot-quick-actions.png" alt="Quick action buttons on plant card" class="guide-screenshot">
+                
+                <div class="tip-box">
+                    <strong>💡 Moisture Check:</strong> If the soil is still damp, use "Moisture Check" instead of watering. It adds 3 days from TODAY (not from the last watered date) without logging water, so you can check again soon.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section id="recommendations" class="section guide-section">
+        <div class="container" style="max-width: 900px;">
+            <div class="guide-header">
+                <span class="step-badge">Feature</span>
+                <h2>🧠 Smart Recommendations</h2>
+            </div>
+            <div class="guide-content">
+                <p>Get personalized care tips based on your plants and care history.</p>
+                
+                <h3>Accessing Recommendations</h3>
+                <ol class="guide-steps">
+                    <li>Tap the <strong>+</strong> button</li>
+                    <li>Select "Smart Recommendations"</li>
+                    <li>View AI-generated insights about your plant care</li>
+                </ol>
+                
+                <h3>What You'll See</h3>
+                <ul class="guide-steps">
+                    <li>Patterns in your watering habits</li>
+                    <li>Suggestions for plants that might need more/less water</li>
+                    <li>Seasonal care adjustments</li>
+                    <li>Tips specific to your plant species</li>
+                </ul>
+                
+                <img src="images/screenshot-recommendations.png" alt="AI-generated care recommendations" class="guide-screenshot">
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics -->
+    <section id="analytics" class="section guide-section">
+        <div class="container" style="max-width: 900px;">
+            <div class="guide-header">
+                <span class="step-badge">Feature</span>
+                <h2>📊 Analytics & Insights</h2>
+            </div>
+            <div class="guide-content">
+                <p>Track your care patterns and plant collection over time.</p>
+                
+                <h3>Accessing Analytics</h3>
+                <ol class="guide-steps">
+                    <li>Tap the <strong>+</strong> button</li>
+                    <li>Select "Analytics & Insights"</li>
+                </ol>
+                
+                <h3>Available Metrics</h3>
+                <ul class="guide-steps">
+                    <li><strong>Care Frequency:</strong> How often you water and feed</li>
+                    <li><strong>Plant Health Trends:</strong> Which plants are thriving</li>
+                    <li><strong>Collection Growth:</strong> How many plants you've added</li>
+                    <li><strong>Care Consistency:</strong> Your dedication score</li>
+                    <li><strong>LVS Token Earnings:</strong> Tokens earned from care activities</li>
+                </ul>
+                
+                <img src="images/screenshot-analytics.png" alt="Analytics dashboard with care statistics" class="guide-screenshot">
+                
+                <div class="tip-box">
+                    <strong>💡 Token Connection:</strong> Your consistency in using the tracker directly affects your phigital NFT pot values!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Environmental Monitor -->
+    <section id="environmental" class="section guide-section">
+        <div class="container" style="max-width: 900px;">
+            <div class="guide-header">
+                <span class="step-badge">Feature</span>
+                <h2>🌡️ Environmental Monitor</h2>
+            </div>
+            <div class="guide-content">
+                <p>Track environmental conditions for optimal plant health.</p>
+                
+                <h3>Accessing the Monitor</h3>
+                <ol class="guide-steps">
+                    <li>Tap the <strong>+</strong> button</li>
+                    <li>Select "Environmental Monitor"</li>
+                </ol>
+                
+                <h3>What It Tracks</h3>
+                <ul class="guide-steps">
+                    <li><strong>Temperature:</strong> Room temperature monitoring</li>
+                    <li><strong>Humidity:</strong> Air moisture levels</li>
+                    <li><strong>Light Levels:</strong> Brightness in different locations</li>
+                </ul>
+                
+                <h3>Using the Data</h3>
+                <p>The monitor helps you understand if your plants are in the right environment. You'll get alerts if conditions aren't ideal for specific species.</p>
+                
+                <img src="images/screenshot-environmental.png" alt="Environmental monitor showing temperature and humidity" class="guide-screenshot">
+                
+                <div class="tip-box">
+                    <strong>💡 Coming Soon:</strong> Connect external sensors for automatic environmental tracking!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Settings -->
+    <section id="settings" class="section guide-section">
+        <div class="container" style="max-width: 900px;">
+            <div class="guide-header">
+                <span class="step-badge">Feature</span>
+                <h2>⚙️ Settings & Preferences</h2>
+            </div>
+            <div class="guide-content">
+                <p>Customize Indoor Jungle to work the way you want.</p>
+                
+                <h3>Accessing Settings</h3>
+                <ol class="guide-steps">
+                    <li>Tap the <strong>+</strong> button</li>
+                    <li>Select "Settings"</li>
+                </ol>
+                
+                <h3>Available Options</h3>
+                <ul class="guide-steps">
+                    <li><strong>Dark Mode:</strong> Toggle between light and dark theme</li>
+                    <li><strong>Notifications:</strong> 
+                        <ul>
+                            <li>Enable daily care reminders</li>
+                            <li>Set reminder time</li>
+                            <li>Choose advance notice (same day, 1 day, or 2 days before)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Data Management:</strong>
+                        <ul>
+                            <li>Export all your data as backup</li>
+                            <li>Import data from backup file</li>
+                            <li>Clear all data (requires admin password)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Account:</strong> View your Replit profile and logout</li>
+                </ul>
+                
+                <img src="images/screenshot-settings.png" alt="Settings page with preferences" class="guide-screenshot">
+                
+                <div class="tip-box">
+                    <strong>💡 Regular Backups:</strong> Export your data regularly! Use the export button in Settings to save a JSON backup file.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game -->
+    <section id="game" class="section guide-section">
+        <div class="container" style="max-width: 900px;">
+            <div class="guide-header">
+                <span class="step-badge">Feature</span>
+                <h2>🎮 Indoor Jungle Game</h2>
+            </div>
+            <div class="guide-content">
+                <p>Access your virtual plant world where real-world care earns rewards.</p>
+                
+                <h3>Accessing the Game</h3>
+                <ul class="guide-steps">
+                    <li>Tap "game" in the bottom navigation bar, OR</li>
+                    <li>Tap the <strong>+</strong> button → "Indoor Jungle Game"</li>
+                </ul>
+                
+                <h3>How It Works</h3>
+                <ol class="guide-steps">
+                    <li><strong>Earn LVS Tokens:</strong> Every time you log care for your real plants, you earn LVS tokens in the game</li>
+                    <li><strong>Progress Through Eras:</strong> Use tokens to unlock 10 gaming eras from LCD handheld to space colonies</li>
+                    <li><strong>Grow Your NFT Value:</strong> Your tracker usage and game progress increase your phigital NFT pot values</li>
+                    <li><strong>Trade & Collect:</strong> Buy, sell, and trade virtual plants and pots with other players</li>
+                </ol>
+                
+                <img src="images/screenshot-game-interface.png" alt="Indoor Jungle game interface" class="guide-screenshot">
+                
+                <div class="tip-box">
+                    <strong>💡 Learn More:</strong> Check out the full <a href="game.html">Eras of Growth guide</a> to understand the complete gaming journey!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Troubleshooting -->
+    <section id="troubleshooting" class="section guide-section">
+        <div class="container" style="max-width: 900px;">
+            <div class="guide-header">
+                <span class="step-badge">Help</span>
+                <h2>🔧 Troubleshooting</h2>
+            </div>
+            <div class="guide-content">
+                <h3>Common Issues & Solutions</h3>
+                
+                <div class="faq-item">
+                    <h4>My plant list isn't loading</h4>
+                    <p><strong>Solution:</strong> Pull down on the screen to refresh. If that doesn't work, try logging out and back in from Settings.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Notifications aren't working</h4>
+                    <p><strong>Solution:</strong> Check Settings → Notifications. Make sure they're enabled in both the app AND your device settings.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Calendar colors aren't showing correctly</h4>
+                    <p><strong>Solution:</strong> The calendar uses your plant's nextCheck date. If colors seem wrong, check individual plant care schedules.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Plant ID not working</h4>
+                    <p><strong>Solution:</strong> Make sure you're in good lighting and the plant is clearly visible. Try taking multiple photos from different angles.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>I can't find the + button</h4>
+                    <p><strong>Solution:</strong> The green + button is in the top right corner of the main plant list screen. If you're on a different page, navigate back to "plants" using the bottom navigation.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Data not syncing between devices</h4>
+                    <p><strong>Solution:</strong> Currently, data is stored per-device. Use the Export feature in Settings to back up and transfer data between devices.</p>
+                </div>
+                
+                <h3>Still Need Help?</h3>
+                <p>Contact the beta testing team via email with:</p>
+                <ul class="guide-steps">
+                    <li>What you were trying to do</li>
+                    <li>What happened instead</li>
+                    <li>Screenshots if possible</li>
+                    <li>Your device type (iPhone, Android, etc.)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="section" style="background: linear-gradient(135deg, var(--primary-green) 0%, hsl(122, 39%, 32%) 100%); color: white;">
+        <div class="container" style="max-width: 900px; text-align: center;">
+            <h2 style="color: white; margin-bottom: 1rem;">We Need Your Feedback!</h2>
+            <p style="font-size: 1.125rem; margin-bottom: 2rem; opacity: 0.95;">As a beta tester, your insights are invaluable. Please report bugs, suggest features, and share your experience.</p>
+            <p style="opacity: 0.9;">Your feedback shapes the future of Indoor Jungle. Thank you for being part of our founding community!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Indoor Jungle">
+                        <span>Indoor Jungle</span>
+                    </div>
+                    <p>Beta Tester Guide</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Main Site</a></li>
+                        <li><a href="tracker.html">Tracker Features</a></li>
+                        <li><a href="game.html">The Game</a></li>
+                        <li><a href="phigital-pots.html">Phigital Pots</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-legal">
+                <p>&copy; 2025 Indoor Jungle. Beta Testing Guide - Confidential</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
