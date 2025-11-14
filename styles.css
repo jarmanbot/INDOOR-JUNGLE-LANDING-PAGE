@@ -1560,6 +1560,34 @@ html {
     margin: 0;
 }
 
+/* Responsive Image Sizing */
+.guide-screenshot {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    margin: var(--spacing-md) auto;
+    display: block;
+    border: 1px solid var(--border);
+}
+
+/* General screenshot styling */
+.screenshot-showcase img,
+.phone-frame img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* NFT pot concept images */
+.pot-tier img,
+.nft-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
 @media (max-width: 968px) {
     .phigital-explanation {
         grid-template-columns: 1fr;
@@ -1569,5 +1597,10 @@ html {
         transform: rotate(90deg);
         text-align: center;
         margin: var(--spacing-sm) 0;
+    }
+    
+    /* Make guide screenshots smaller on mobile */
+    .guide-screenshot {
+        max-width: 300px;
     }
 }
