@@ -3,6 +3,7 @@
 This is the public landing page for Indoor Jungle - a hybrid plant care tracker and Web3 gaming ecosystem.
 
 07.11.25 landing page req's art screenshots and proofing v0.03.06
+17.11.25 phygital pics need to be created and uploaded, deleting checklist 
 
 **Live Site:** https://jarmanbot.github.io/INDOOR-JUNGLE-LANDING-PAGE/
 
@@ -43,169 +44,17 @@ The landing page consists of **5 interconnected pages**:
 
 After pushing these files to GitHub, complete these tasks to go live:
 
-- [ ] Enable GitHub Pages (Settings → Pages → Deploy from main/root)
-- [ ] Update URLs in all HTML files with your GitHub Pages URL
-- [ ] Add all app screenshots to `landing-page/images/` folder
+- [*] Enable GitHub Pages (Settings → Pages → Deploy from main/root)
+- [*] Update URLs in all HTML files with your GitHub Pages URL
+- [*] Add all app screenshots to `landing-page/images/` folder
 - [ ] Replace screenshot placeholder divs with `<img>` tags
-- [ ] Add your social media links (Facebook, Instagram)
+- [*] Add your social media links (Facebook, Instagram)
 - [ ] Connect email signup form to your email service
 - [ ] Create legal pages (terms.html, privacy.html, disclaimer.html)
 - [ ] Test on mobile devices
 
 ---
 
-## 📸 Screenshots Guide
-
-All screenshots should be saved to `landing-page/images/` folder with these exact filenames:
-
-### Common Files (All Pages)
-```
-logo.png                          # Indoor Jungle app icon (already exists)
-```
-
-### tracker.html Screenshots (5 files)
-```
-screenshot-plant-list.png         # Main plant list with numbered plants
-screenshot-dropdown.png           # Dropdown menu showing options
-screenshot-calendar.png           # Calendar view with care schedule
-screenshot-missed-care.png        # Missed care tasks page/view
-screenshot-plantid.png            # Individual plant detail page
-```
-
-### game.html Screenshots (1 file)
-```
-screenshot-game-eras.png          # Comparison of different era properties
-```
-
-### phigital-pots.html Images (4 files)
-```
-pot-concept-basic.png             # Basic terracotta NFT pot concept art
-pot-concept-premium.png           # Premium ceramic NFT pot concept art
-pot-concept-luxury.png            # Luxury designer NFT pot concept art
-screenshot-nft-dashboard.png      # NFT dashboard showing owned pots
-```
-
-### beta-guide.html Screenshots (11 files)
-```
-screenshot-ios-install.png        # iOS PWA installation steps
-screenshot-android-install.png    # Android PWA installation steps
-screenshot-add-plant.png          # Add plant form
-screenshot-care.png               # Care logging form
-screenshot-quick-actions.png      # Quick action buttons on plant cards
-screenshot-recommendations.png    # AI care recommendations
-screenshot-analytics.png          # Analytics dashboard view
-screenshot-environmental.png      # Environmental monitor (temp/humidity)
-screenshot-settings.png           # Settings page
-screenshot-game-interface.png     # Game interface for virtual plants
-screenshot-notifications.png      # Notification settings page
-```
-
-### Screenshot Specifications
-
-- **Format:** PNG (preferred) or JPG
-- **Mobile Screenshots:** 1179 x 2556 px
-- **Desktop Screenshots:** 1920 x 1080 px (16:9 aspect ratio) 
-- **File Size:** Under 500KB each (compress with [TinyPNG](https://tinypng.com/))
-- **Quality:** High resolution, clear UI elements, no sensitive user data
-
----
-
-## 📤 Uploading Screenshots
-
-### Method 1: Upload to Replit (Recommended)
-
-1. In this Replit project, navigate to `landing-page/images/` folder
-2. Upload your screenshots with the exact filenames listed above
-3. Once all images are uploaded, proceed to Method 2
-
-### Method 2: Upload to GitHub
-
-1. Go to your GitHub repository: https://github.com/jarmanbot/INDOOR-JUNGLE-LANDING-PAGE
-2. Navigate to the `images/` folder (create if it doesn't exist)
-3. Click **Add file** → **Upload files**
-4. Drag and drop all screenshots from `landing-page/images/` folder
-5. Commit the changes
-
----
-
-## 🖼️ Replacing Screenshot Placeholders
-
-After uploading screenshots, replace the placeholder divs with actual `<img>` tags:
-
-### Find placeholders like this:
-```html
-<div class="screenshot-placeholder">
-    <span>Plant List Screenshot</span>
-</div>
-```
-
-### Replace with:
-```html
-<img src="images/screenshot-plant-list.png" alt="Indoor Jungle plant list with numbered tracking">
-```
-
-### Replacement Guide by File:
-
-#### tracker.html
-- Line ~67: Replace "Plant List Screenshot" placeholder with `<img src="images/screenshot-plant-list.png" alt="Plant list view">`
-- Line ~98: Replace "Dropdown Menu Screenshot" with `<img src="images/screenshot-dropdown.png" alt="Plant options menu">`
-- Line ~167: Replace "Calendar Screenshot" with `<img src="images/screenshot-calendar.png" alt="Care calendar">`
-- Line ~197: Replace "Missed Care Screenshot" with `<img src="images/screenshot-missed-care.png" alt="Overdue care tasks">`
-- Line ~227: Replace "Plant ID Screenshot" with `<img src="images/screenshot-plantid.png" alt="Plant detail page">`
-
-#### game.html
-- Line ~330: Replace "Era Comparison Screenshot" with `<img src="images/screenshot-game-eras.png" alt="Game progression through property eras">`
-
-#### phigital-pots.html
-- Line ~226: Replace placeholder with `<img src="images/pot-concept-basic.png" alt="Basic terracotta NFT pot">`
-- Line ~242: Replace placeholder with `<img src="images/pot-concept-premium.png" alt="Premium ceramic NFT pot">`
-- Line ~258: Replace placeholder with `<img src="images/pot-concept-luxury.png" alt="Luxury designer NFT pot">`
-- Line ~350: Replace "NFT Dashboard Screenshot" with `<img src="images/screenshot-nft-dashboard.png" alt="NFT pot collection dashboard">`
-
-#### beta-guide.html ✅ COMPLETE
-All screenshot placeholders have been replaced with `<img>` tags ready for the 11 required screenshots.
-
----
-
-## 🔧 Initial Setup
-
-### 1. Update URLs in HTML Files
-
-**IMPORTANT:** Replace all placeholder URLs before going live.
-
-**In each HTML file's `<head>` section:**
-
-Find and replace:
-```html
-<meta property="og:url" content="https://yourusername.github.io/indoor-jungle/">
-```
-
-With:
-```html
-<meta property="og:url" content="https://jarmanbot.github.io/INDOOR-JUNGLE-LANDING-PAGE/">
-```
-
-Do this for all occurrences in the meta tags (OG and Twitter cards) across ALL 5 HTML files.
-
-Also update image URLs:
-```html
-<meta property="og:image" content="https://jarmanbot.github.io/INDOOR-JUNGLE-LANDING-PAGE/images/logo.png">
-```
-
-**In footer and social sections (all files):**
-
-Replace placeholder social media URLs:
-- `https://facebook.com/yourpage` → your actual Facebook page
-- `https://instagram.com/yourpage` → your actual Instagram account
-
-### 2. Enable GitHub Pages
-
-1. Go to https://github.com/jarmanbot/INDOOR-JUNGLE-LANDING-PAGE/settings/pages
-2. Under "Source", select **Deploy from a branch**
-3. Choose **main** branch and **/ (root)** folder
-4. Click **Save**
-
-Your site will be live at: `https://jarmanbot.github.io/INDOOR-JUNGLE-LANDING-PAGE/`
 
 ---
 
