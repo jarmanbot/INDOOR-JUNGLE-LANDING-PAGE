@@ -38,61 +38,79 @@ The landing page consists of **5 interconnected pages**:
 - Sent via email after signup
 - NOT linked in main navigation (has noindex meta tag)
 
----
+# Indoor Jungle Landing Page — Master Checklist
+
+## 📁 Files & Structure
+- [ ] Ensure these files exist in the root or specified folders:
+  - [ ] index.html
+  - [ ] tracker.html
+  - [ ] game.html
+  - [ ] phigital-pots.html
+  - [ ] beta-guide.html (email-only, noindex)
+  - [ ] styles.css
+  - [ ] script.js
+  - [ ] README.md
+  - [ ] /images folder with all screenshots, concept art, and logo
 
 ## 📋 Quick Start Checklist
-
-After pushing these files to GitHub, complete these tasks to go live:
-
-- [*] Enable GitHub Pages (Settings → Pages → Deploy from main/root)
-- [*] Update URLs in all HTML files with your GitHub Pages URL
-- [*] Add all app screenshots to `landing-page/images/` folder
-- [ ] Replace screenshot placeholder divs with `<img>` tags
-- [*] Add your social media links (Facebook, Instagram)
-- [ ] Connect email signup form to your email service
+- [ ] Enable GitHub Pages (Settings → Pages → Deploy from main/root)
+- [ ] Update URLs in all HTML files with your GitHub Pages URL
+- [ ] Add all app screenshots to landing-page/images/
+- [ ] Replace screenshot placeholder divs with <img> tags
+- [ ] Add your social media links (Facebook, Instagram)
+- [ ] Connect email signup form to your email service (Formspree, Mailchimp, or Google Forms)
 - [ ] Create legal pages (terms.html, privacy.html, disclaimer.html)
 - [ ] Test on mobile devices
 
----
-
-
----
-
 ## 📧 Email Signup Integration
+- [ ] Decide on Formspree, Mailchimp, or Google Forms
+- [ ] Embed/integrate the chosen form in index.html
+- [ ] Remove/comment out placeholder JS alert from script.js
+- [ ] Test the signup flow
 
-The form currently shows a JavaScript alert. Choose one option to collect real signups:
+## 🔒 Legal Pages
+- [ ] Create terms.html (using generator for base content)
+- [ ] Create privacy.html (include data, cookie, Firebase info)
+- [ ] Create disclaimer.html (crypto/NFT/beta warnings)
+- [ ] Paste legal links in the footer of all HTML files
 
-### Option 1: Formspree (Easiest - Free tier available)
+## 🎨 Customization
+- [ ] Set site colors in styles.css using CSS variables
+- [ ] Update hero headline and navigation links in index.html
+- [ ] Polish feature descriptions and marketing copy in tracker.html
+- [ ] Update game economy and eras in game.html
+- [ ] Finalize NFT pot descriptions and sales info in phigital-pots.html
+- [ ] Write clear beta-guide instructions in beta-guide.html
 
-1. Sign up at [formspree.io](https://formspree.io/)
-2. Create a new form
-3. Copy your form endpoint
-4. In `index.html`, update the form tag:
-```html
-<form id="betaForm" class="signup-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-```
-5. Remove or comment out the form handler in `script.js`
+## 📊 Analytics (Optional)
+- [ ] Set up a Google Analytics account
+- [ ] Add GA script before </head> in all HTML files
 
-### Option 2: Mailchimp
+## 🌐 Custom Domain (Optional)
+- [ ] Purchase desired domain
+- [ ] Add DNS A records and CNAME in registrar settings
+- [ ] Add CNAME file to repo root with domain name
 
-1. Create a Mailchimp account and audience
-2. Generate embedded form code
-3. Replace the signup form section with Mailchimp's code
-4. Style to match existing design
+## 🧪 Testing Checklist
+- [ ] Verify all 5 HTML pages load correctly
+- [ ] All screenshots/images display as intended
+- [ ] Navigation links connect all pages
+- [ ] Social media links work
+- [ ] Signup form submits to chosen service
+- [ ] Test on iOS Safari and Android Chrome
+- [ ] Test on desktop (Chrome, Safari, Firefox)
+- [ ] Check performance/speed with PageSpeed Insights
+- [ ] Verify OpenGraph meta tags
+- [ ] Ensure beta-guide.html uses noindex tag
 
-### Option 3: Google Forms
-
-1. Create a Google Form with fields: Name, Email
-2. Get the form's pre-filled link to find field IDs
-3. Update form action and field names in `index.html`:
-```html
-<form action="https://docs.google.com/forms/d/e/FORM_ID/formResponse" method="POST">
-  <input type="text" name="entry.123456789" placeholder="Your Name" required>
-  <input type="email" name="entry.987654321" placeholder="Your Email" required>
-</form>
-```
+## 🔄 Publishing Workflow
+- [ ] Upload all files to GitHub
+- [ ] Deploy on GitHub Pages
+- [ ] Announce beta only after all tests are complete
 
 ---
+
+**Pro Tip:** You can copy this checklist into your README or use it as a GitHub issue for tracking your tasks!
 
 ## 🔒 Legal Pages
 
