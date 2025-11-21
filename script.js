@@ -1,42 +1,39 @@
 // Indoor Jungle Landing Page Scripts
 
-// Form submission handler
-document.getElementById('betaForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Get form data
-    const formData = {
-        name: document.getElementById('name').value,
-        email: document.getElementById('email').value,
-        experience: document.getElementById('experience').value,
-        updates: document.getElementById('updates').checked
-    };
-    
-    // Display success message (you'll replace this with actual email service integration)
-    alert('Thank you for joining the waitlist! We\'ll be in touch soon with beta access details.');
-    
-    // Reset form
-    this.reset();
-    
-    // Log to console for testing
-    console.log('Form submitted:', formData);
-    
-    /* 
-     * TODO: Integrate with email service
-     * 
-     * Option 1: Formspree (easiest)
-     * Change form action to: action="https://formspree.io/f/YOUR_FORM_ID"
-     * Remove this script's preventDefault and let form submit naturally
-     * 
-     * Option 2: Mailchimp
-     * Use Mailchimp's embedded form code and API
-     * 
-     * Option 3: Google Forms
-     * Use Google Forms API or pre-filled URL method
-     * 
-     * See README.md for detailed setup instructions
-     */
-});
+// Modal functionality (only if modal exists on this page)
+const modal = document.getElementById('waitlistModal');
+const openModalBtn = document.getElementById('openWaitlistModal');
+const closeModalBtn = document.querySelector('.modal-close');
+
+if (modal && openModalBtn && closeModalBtn) {
+    // Open modal when button is clicked
+    openModalBtn.addEventListener('click', function() {
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    });
+
+    // Close modal when X is clicked
+    closeModalBtn.addEventListener('click', function() {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    });
+
+    // Close modal when clicking outside the modal content
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+
+    // Close modal when Escape key is pressed
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape' && modal.style.display === 'block') {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
+}
 
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
